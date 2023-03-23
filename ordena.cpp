@@ -30,7 +30,7 @@ int main()
     
     char vet[6] =  {'o','r','d','e','n','a'};
 
-    cout << "String Original " << vet << endl;
+    cout << "String Original: " << vet << endl;
 
     bubbleSort(vet, 6);
 
