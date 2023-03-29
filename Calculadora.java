@@ -75,7 +75,7 @@ public class Calculadora {
                     break;
                 case 4:
                     String numero2 = JOptionPane.showInputDialog("Digite um novo número:");
-                    num1 = Float.parseFloat(numero1);
+                    num1 = Float.parseFloat(numero2);
                     break;
                 case 5: 
                     System.exit(0);          
