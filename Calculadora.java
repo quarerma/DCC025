@@ -79,7 +79,9 @@ public class Calculadora {
                     break;
                 case 5: 
                     System.exit(0);          
-                }               
+                default:
+                System.exit(0);}    
+            }               
         }while (true);
     }
 }
