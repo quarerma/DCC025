@@ -63,7 +63,7 @@ public class Calculadora {
                     break;
                 case 1:
                     num1 = sub(num1);
-                    JOptionPane.showMessageDialog(null, "Resultado da SUbtração: " + num1);
+                    JOptionPane.showMessageDialog(null, "Resultado da Subtração: " + num1);
                     break;
                 case 2:
                     num1 = mult(num1);
