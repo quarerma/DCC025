@@ -80,8 +80,8 @@ public class Calculadora {
                 case 5: 
                     System.exit(0);          
                 default:
-                System.exit(0);}    
-            }               
+                System.exit(0);
+            }                  
         }while (true);
     }
 }
