@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author USER
+ * @author quarerma
  */
 public class VerificaEmail {
 
