@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Gabriel
+ * @author quarerma
  */
 public class CalculoDistancia {
 
