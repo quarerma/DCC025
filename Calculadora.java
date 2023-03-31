@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author ice
+ * @author quarerma
  */
 public class Calculadora {
     
