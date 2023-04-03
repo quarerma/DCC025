@@ -78,9 +78,10 @@ public class Calculadora {
                     num1 = Float.parseFloat(numero2);
                     break;
                 case 5: 
-                    System.exit(0);          
-                default:
-                System.exit(0);
+                    System.exit(0);
+                    break;
+                default: 
+                    System.exit(0);
             }                  
         }while (true);
     }
