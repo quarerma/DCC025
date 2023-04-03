@@ -14,28 +14,28 @@ public class Calculadora {
     
     public static float soma(float x){
         float num1 = 0;
-        String numero1 = JOptionPane.showInputDialog("Digite um número para operação: ");
+        String numero1 = JOptionPane.showInputDialog("Digite um número para soma: ");
         num1 = Float.parseFloat(numero1);
         
         return x+num1;
     }
     public static float sub(float x){
         float num1 = 0;
-        String numero1 = JOptionPane.showInputDialog("Digite um número para operação: ");
+        String numero1 = JOptionPane.showInputDialog("Digite um número para subtraçãp: ");
         num1 = Float.parseFloat(numero1);
     
         return x-num1;
     }
     public static float mult(float x){
         float num1 = 0;
-        String numero1 = JOptionPane.showInputDialog("Digite um número para operação: ");
+        String numero1 = JOptionPane.showInputDialog("Digite um número para multiplicação: ");
         num1 = Float.parseFloat(numero1);
     
         return x*num1;
     }
     public static float div(float x){
         float num1 = 0;
-        String numero1 = JOptionPane.showInputDialog("Digite um número para operação: ");
+        String numero1 = JOptionPane.showInputDialog("Digite um número para divisão: ");
         num1 = Float.parseFloat(numero1);
         
         if(num1 == 0) {
