@@ -4,7 +4,7 @@
 
 package com.ufjf.dcc025.listaalunos;
 
-import java.util.ArrayList;fssd 
+import java.util.ArrayList; 
 import javax.swing.JOptionPane;
 import java.util.List;
 
@@ -65,20 +65,21 @@ public class ListaAlunos {
             
             pessoas.add(new Pessoas(nome, idade));
         }
-      List <Pessoas> pessoasOrdenadasPorIdade = ordenaPorIdade(pessoas);
-      
+        List <Pessoas> pessoasOrdenadasPorIdade = ordenaPorIdade(pessoas);
+    
         System.out.println("Pessoas Impressas em Ordem de Idade");
         for(Pessoas pessoa : pessoasOrdenadasPorIdade){
             System.out.println("Nome: " + pessoa.getName() + "-> Idade: " + pessoa.getAge());
         }
-      
+      pessoasOrdenadasPorIdade.clear();
+        
       List <Pessoas> pessoasOrdenadasPorNome = ordenaPorNome(pessoas);
       
         System.out.println("Pessoas Impressas em Ordem de Nome");
         for(Pessoas pessoa : pessoasOrdenadasPorNome){
             System.out.println("Nome: " + pessoa.getName() + "-> Idade: " + pessoa.getAge());
         }
-    
+      pessoasOrdenadasPorNome.clear();
         
     }
 }
