@@ -9,9 +9,6 @@ package aula2.polimorfismoanimais;
  * @author ice
  */
 public class Animal {
-    public Animal(){
-     
-    }
     public void fala(){
         System.out.println("Apenas um animal");
     }    
