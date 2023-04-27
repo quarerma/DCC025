@@ -19,7 +19,7 @@ public class OrdenadorNome extends Ordenador{
         for(int i = 0; i < pessoas.size() - 1; i ++){
             for(int j = 0; j < pessoas.size() - i - 1; j++)
         
-                if( pessoas.get(j).getName().compareTo(pessoas.get(j+1).getName()) > 0)
+                if( compare(pessoas.get(j), pessoas.get(j - 1)))
                 {
                 aux = pessoas.get(j);
                 pessoas.set(j, pessoas.get(j + 1));
@@ -30,8 +30,8 @@ public class OrdenadorNome extends Ordenador{
     }
 
     @Override
-    public boolean compare(Pessoas pessoa1, Pessoas pessoa2,int ind) {
-        return pessoas.get(ind).getName().compareTo(pessoas.get(ind+1).getName()) > 0;
+    public boolean compare(Pessoas pessoa1, Pessoas pessoa2) {
+        return pessoa1.getName().compareTo(pessoa2.getName()) > 0;
     }
     
 }
