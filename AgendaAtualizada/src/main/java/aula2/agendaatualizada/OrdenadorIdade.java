@@ -19,7 +19,7 @@ public class OrdenadorIdade extends Ordenador{
         for(int i = 0; i < pessoas.size(); i ++){
             for(int j = 1; j < pessoas.size() - i; j++)
         {
-                if( pessoas.get(j - 1).getAge() > pessoas.get(j).getAge())
+                if( compare(pessoas.get(j-1), pessoas.get(j)))
                 {
                 aux = pessoas.get(j - 1);
                 pessoas.set(j - 1, pessoas.get(j));
@@ -31,8 +31,8 @@ public class OrdenadorIdade extends Ordenador{
     }
 
     @Override
-    public boolean compare(Pessoas pessoa1, Pessoas pessoa2, int ind) {
-        return pessoas.get(ind - 1).getAge() > pessoas.get(ind).getAge()
+    public boolean compare(Pessoas pessoa1, Pessoas pessoa2) {
+        return pessoa1.getAge() > pessoa2.getAge();
     }
     
 }

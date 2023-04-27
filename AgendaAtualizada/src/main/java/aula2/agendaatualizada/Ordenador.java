@@ -13,6 +13,6 @@ import java.util.List;
 public abstract class Ordenador {
 
     public abstract List<Pessoas> ordena(List<Pessoas> pessoas);
-    public abstract boolean compare(Pessoas pessoa1, Pessoas pessoa2, int ind);
+    public abstract boolean compare(Pessoas pessoa1, Pessoas pessoa2);
 
 }
