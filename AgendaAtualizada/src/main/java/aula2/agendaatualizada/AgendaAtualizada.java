@@ -24,6 +24,25 @@ public class AgendaAtualizada {
             
             pessoas.add(new Pessoas(nome, idade));
         }
+        OrdenadorIdade ordenaIdade = new OrdenadorIdade();
+        OrdenadorNome ordenaNome = new OrdenadorNome();
+            
+    
+        List <Pessoas> pessoasOrdenadasPorIdade = ordenaIdade.ordena(pessoas);
+    
+        System.out.println("Pessoas Impressas em Ordem de Idade");
+        for(Pessoas pessoa : pessoasOrdenadasPorIdade){
+            System.out.println("Nome: " + pessoa.getName() + "-> Idade: " + pessoa.getAge());
+        }
+        pessoasOrdenadasPorIdade.clear();
+        
+        List <Pessoas> pessoasOrdenadasPorNome = ordenaNome.ordena(pessoas);
+      
+        System.out.println("Pessoas Impressas em Ordem de Nome");
+        for(Pessoas pessoa : pessoasOrdenadasPorNome){
+            System.out.println("Nome: " + pessoa.getName() + "-> Idade: " + pessoa.getAge());
+        }
+      pessoasOrdenadasPorNome.clear();
     }
 
 }
