@@ -27,6 +27,6 @@ public class LeFraseMap {
         }
         
         for(Map.Entry entrada : contCaracter.entrySet())
-            System.out.println(entrada.getKey() + " - " + entrada.getValue());
+            System.out.println(entrada.getKey() + " ==> " + entrada.getValue());
     }
 }
