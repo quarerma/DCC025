@@ -81,6 +81,7 @@ public class Main {
         }
         return 0;
     }
+    // teste
     public static void checkDivisionByZero(double divisor) throws DivisionByZero {
         if(divisor == 0){
             throw new DivisionByZero(" ");
