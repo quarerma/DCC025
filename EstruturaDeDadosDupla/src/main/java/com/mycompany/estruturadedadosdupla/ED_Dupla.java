@@ -4,7 +4,7 @@
  */
 package com.mycompany.estruturadedadosdupla;
 
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  *
