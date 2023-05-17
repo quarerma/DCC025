@@ -79,7 +79,7 @@ public class Main {
         }catch (DivisionByZero e) {
             System.out.println("Erro: Divisao Por Zero");;
         }
-        return 0;
+        return value;
     }
     // teste
     public static void checkDivisionByZero(double divisor) throws DivisionByZero {
