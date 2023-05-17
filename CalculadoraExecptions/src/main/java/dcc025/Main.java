@@ -1,7 +1,6 @@
 package dcc025;
 
-import java.io.IOException;
-import java.util.Enumeration;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -19,9 +18,16 @@ public class Main {
             System.out.println("Digite a operacao:");
             printMenu();
             teclado.nextLine();
-            option = teclado.nextInt();
+            try{
+                option = teclado.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Erro: Valor Invalido");
+                option = 0 ;
+            }
 
             switch (option){
+                case 0:
+                    break;
                 case 1:
                     num = adding(num);
                     System.out.println("Resultado da Soma:" + num);
@@ -87,12 +93,13 @@ public class Main {
             throw new DivisionByZero(" ");
         }
     }
-    public static double leDouble(){
+    public static double leDouble() {
 
-        try{
+        try {
             return teclado.nextDouble();
-        }catch (InputMismatchException e){
+        } catch (InputMismatchException e) {
             System.out.println("Erro: Valor Invalido");
+            System.out.println("Valor Atribuido = 1\n");
         }
         return 1;
     }
