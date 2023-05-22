@@ -94,13 +94,13 @@ public class Main {
         }
     }
     public static double leDouble() {
-
+        double valor;
         try {
-            return teclado.nextDouble();
+            valor = teclado.nextDouble();
         } catch (InputMismatchException e) {
             System.out.println("Erro: Valor Invalido");
-            System.out.println("Valor Atribuido = 1\n");
+            valor = leDouble();
         }
-        return 1;
+        return valor;
     }
 }
